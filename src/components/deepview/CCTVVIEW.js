@@ -93,15 +93,13 @@ export const CCTVVIEW = (props) => {
       <CardContent>
         <Box
           sx={{
-            height: 400,
+            height: '100%',
             position: 'relative'
           }}
         >
          <Video />
         </Box>
       </CardContent>
-      <Divider />
-     
     </Card>
   );
 };

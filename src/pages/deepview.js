@@ -57,9 +57,7 @@ const Deepview = () => (
           <Grid
             item
             lg={8}
-            md={8}
-            xl={12}
-            xs={12}
+           
           >
             <CCTVVIEW />
           </Grid>
