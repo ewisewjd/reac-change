@@ -1,6 +1,6 @@
 import { Avatar, Box, Card, CardContent, Grid, LinearProgress, Typography,Button } from '@mui/material';
 import InsertChartIcon from '@mui/icons-material/InsertChartOutlined';
-import {videopause as Video} from 'react-player/.js'
+import {videopause as Video} from './react-player.js';
 
 export const HOLD = (props) => (
   <Card
@@ -26,8 +26,7 @@ export const HOLD = (props) => (
         
       </Grid>
         <Grid item>
-            <Button onClick={videopause}>HOLD
-          </Button>
+          
         </Grid>
     </CardContent>
   </Card>

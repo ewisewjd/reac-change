@@ -21,15 +21,15 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 
-const data=() =>[
+const data=
   {
     ml_case_name:'12345',
     ml_case_count:'12345',
     ml_case_region_uuid:'12345'
 
 
-}]
-
+};
+console.log(data.ml_case_count);
 export const CCTVINFO = (props) => (
   
   <Card {...props}>
@@ -38,15 +38,16 @@ export const CCTVINFO = (props) => (
     />
     <Divider />
      <CardContent>
-    <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          pb: 3
-        }}
-      >
+     <Box
+          sx={{
+            height: '100%',
+            position: 'relative'
+          }}
+        >
+         
+        </Box>
         
-      </Box>
+     
     
       <Typography>
       {data.ml_case_name}
@@ -59,7 +60,7 @@ export const CCTVINFO = (props) => (
       </Typography>
     </CardContent>
    
-    
+     
   </Card>
 );
 

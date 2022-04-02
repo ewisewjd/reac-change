@@ -1,11 +1,12 @@
 import Head from 'next/head';
-import { Box, Container, Grid } from '@mui/material';
+import { Box, Container, Grid,Button } from '@mui/material';
 import { START } from '../components/deepview/START.js'
 import { CCTVVIEW } from '../components/deepview/CCTVVIEW.js';
 import { HOLD } from '../components/deepview/HOLD.js';
 import { STOP } from '../components/deepview/STOP.js';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { CCTVINFO } from 'src/components/deepview/CCTVINFO.js';
+
 
 const Deepview = () => (
   <>
@@ -34,6 +35,8 @@ const Deepview = () => (
             xs={12}
           >
             <START />
+            
+             
           </Grid>
           <Grid
             item
@@ -67,7 +70,7 @@ const Deepview = () => (
             lg={4}
             md={6}
             xl={3}
-          
+            xs={12}
           >
             <CCTVINFO sx={{ height:'100%'}} />
           </Grid>
