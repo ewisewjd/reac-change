@@ -67,7 +67,7 @@ const Deepview = () => (
             lg={4}
             md={6}
             xl={3}
-            xs={12}
+          
           >
             <CCTVINFO sx={{ height:'100%'}} />
           </Grid>

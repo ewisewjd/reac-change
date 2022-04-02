@@ -14,7 +14,8 @@ import {
   TableHead,
   TablePagination,
   TableRow,
-  Typography
+  Typography,
+  CardContent
 } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -30,37 +31,35 @@ const data=() =>[
 }]
 
 export const CCTVINFO = (props) => (
+  
   <Card {...props}>
     <CardHeader
       title="CCTVINFO"
     />
     <Divider />
-    
+     <CardContent>
     <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        p: 2
-      }}
-    >
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          pb: 3
+        }}
+      >
+        
+      </Box>
     
-      <Table>
-          
-            <TableBody>
-
-                  <TableCell>
-                    {data.ml_case_name}
-                  </TableCell>
-                  <TableCell>
-                    {data.ml_case_count}
-                  </TableCell>
-                  <TableCell>
-                    {data.ml_case_region_uuid}
-                  </TableCell>
-                
-            </TableBody>
-          </Table>
-    </Box>
+      <Typography>
+      {data.ml_case_name}
+      </Typography>
+      <Typography>
+      {data.ml_case_count}
+      </Typography>
+      <Typography>
+      {data.ml_case_region_uuid}
+      </Typography>
+    </CardContent>
+   
+    
   </Card>
 );
 

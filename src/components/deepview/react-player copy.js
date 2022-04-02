@@ -1,29 +1,13 @@
 import ReactPlayer from 'react-player';
-
-
-
+import baby.mp4 from '../components/deepview/testasset'
 const Video = (props) => {
-    const videoplay=()=>{
-        Video.play()
-
-    };
-
-    const videopause=()=>{
-        Video.pause()
-    };
-
-    const videostop = () => {
-        Video.PAUSE()
-        Video.CurrentTime=0
-    };
-
     return (
         <>
             
             <div className='cctvplayer'>
                 <ReactPlayer
                     className='react-player'
-                    url={'https://youtu.be/6CIwtIPqHJw'}    // 플레이어 url
+                    url={'baby.mp4'}    // 플레이어 url
                     height={400}
                     width={650}
                     controls={false}       // 플레이어 컨트롤 노출 여부
